@@ -16,7 +16,7 @@ import java.util.List;
 @RestController
 public class TestController_Consumer {
 
-//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001" //单机;
     private static final String REST_URL_PREFIX = "http://SYSTEMCLOUD-TEST";
 
     @Autowired
