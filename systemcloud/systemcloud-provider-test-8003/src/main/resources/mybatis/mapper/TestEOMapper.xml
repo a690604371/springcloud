@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.ice.dao.TestEOMapper" >
-  <resultMap id="BaseResultMap" type="com.ice.entity.TestEO" >
+<mapper namespace="com.ice.system.dao.TestEOMapper" >
+  <resultMap id="BaseResultMap" type="com.ice.system.entity.TestEO" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="table_name" property="tableName" jdbcType="VARCHAR" />
@@ -19,13 +19,13 @@
     delete from test
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.ice.entity.TestEO" >
+  <insert id="insert" parameterType="com.ice.system.entity.TestEO" >
     insert into test (id, name, table_name
       )
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, DATABASE()
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.ice.entity.TestEO" >
+  <insert id="insertSelective" parameterType="com.ice.system.entity.TestEO" >
     insert into test
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.ice.entity.TestEO" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.ice.system.entity.TestEO" >
     update test
     <set >
       <if test="name != null" >
@@ -62,7 +62,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.ice.entity.TestEO" >
+  <update id="updateByPrimaryKey" parameterType="com.ice.system.entity.TestEO" >
     update test
     set name = #{name,jdbcType=VARCHAR},
       table_name = #{tableName,jdbcType=VARCHAR}
