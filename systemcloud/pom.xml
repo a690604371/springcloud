@@ -98,21 +98,14 @@
         <module>systemcloud-eureka-7003</module>
         <module>systemcloud-provider-test-8002</module>
         <module>systemcloud-provider-test-8003</module>
-        <!--        <module>systemcloud-api</module>-->
-<!--        <module>systemcloud-provider-dept-8001</module>-->
-<!--        <module>systemcloud-consumer-dept-80</module>-->
-<!--        <module>systemcloud-eureka-7002</module>-->
-<!--        <module>systemcloud-eureka-7003</module>-->
-<!--        <module>systemcloud-provider-dept-8002</module>-->
-<!--        <module>systemcloud-provider-dept-8003</module>-->
-<!--        <module>systemcloud-consumer-dept-feign</module>-->
-<!--        <module>systemcloud-provider-dept-hystrix-8001</module>-->
-<!--        <module>systemcloud-consumer-hystrix-dashboard</module>-->
-<!--        <module>systemcloud-zuul-gateway-9527</module>-->
-<!--        <module>systemcloud-config-3344</module>-->
-<!--        <module>systemcloud-config-client-3355</module>-->
-<!--        <module>systemcloud-config-eureka-client-7001</module>-->
-<!--        <module>systemcloud-config-dept-client-8001</module>-->
+        <module>systemcloud-consumer-test-feign</module>
+        <module>systemcloud-provider-test-hystrix-8001</module>
+        <module>systemcloud-consumer-hystrix-dashboard</module>
+        <module>systemcloud-zuul-gateway-9527</module>
+        <module>systemcloud-config-3344</module>
+        <module>systemcloud-config-client-3355</module>
+        <module>systemcloud-config-eureka-client-7001</module>
+        <module>systemcloud-config-test-client-8001</module>
     </modules>
 
 </project>
